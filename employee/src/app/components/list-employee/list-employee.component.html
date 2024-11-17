@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row ">
+           @for (emp of emplist; track $index) {
+        <div class="card col-md-4 " style="width: 18 rem;">
+          <img src={{emp.photoPath}} class="card-img-top" alt="notFound">
+          <div class="card-body">
+                       Name: {{emp.name}}<br>
+                       Gender: {{emp.gender}}<br>
+                       Email: {{emp.email}}<br>
+                       Ph.No: {{emp.phoneNumber}}<br>
+                       Contact_Person:{{emp.contactPreference}}<br>
+                       D.O.B : {{emp.dateOfBirth| date }}<br>
+                       Dept: {{ emp.department}}<br>
+                       IsActive: {{emp.isActive}}<br>          
+          </div>
+        </div>
+      }
+  </div>
+</div>
+
+
+    
+ 

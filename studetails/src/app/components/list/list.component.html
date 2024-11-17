@@ -1,0 +1,20 @@
+<table class="table ">
+    <thead class="table-primary ">
+      <tr>
+        <th scope="col">Si.No</th>
+        <th scope="col">Name</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+     @for (stu of studentlist; track $index) {
+      <tr>
+        <th scope="row">{{stu.Id}}</th>
+        <td>{{stu.Name}}</td>
+       
+      </tr>
+     }
+    </tbody>
+  </table>
+<app-details>studentlist.slice</app-details>
+  

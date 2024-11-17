@@ -1,0 +1,22 @@
+<table class="table ">
+    <thead class="table-primary ">
+      <tr>
+        <th scope="col">Si.No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Dept</th>
+        <th scope="col">Ph.No</th>
+      </tr>
+    </thead>
+    <tbody>
+     @for (stu of studentlist; track $index) {
+      <tr>
+        <th scope="row">{{stu.Id}}</th>
+        <td>{{stu.Name}}</td>
+        <td>{{stu.Dept}}</td>
+        <td>{{stu.PhNo}}</td>
+      </tr>
+     }
+    </tbody>
+  </table>
+
+  

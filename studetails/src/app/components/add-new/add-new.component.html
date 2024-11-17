@@ -1,0 +1,17 @@
+
+<form  class ="jalagar" novalidate #newstu="ngForm" (ngSubmit)="onSubmit(newstu)">
+    
+    <label>Id: <input type="text" required name="name" [(ngModel)]="stuobj.Id"></label><br>
+
+<label>Name: <input type="text" required name="name" [(ngModel)]="stuobj.Name"></label><br>
+
+<label>Dept: <input type="text" required name="name" [(ngModel)]="stuobj.Dept"></label><br>
+
+<label>Phone Number: <input type="text" required name="name" [(ngModel)]="stuobj.PhNo"></label>
+<br>
+
+<button [disabled]="newstu.invalid">Send</button><br>
+
+<button (click)="newstu.reset()" > Reset </button>
+
+</form>
